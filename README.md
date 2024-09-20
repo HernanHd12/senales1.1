@@ -114,6 +114,7 @@ print('Frecuencia de muestreo del audio 3:', fs_3)
 
 En este laboratorio, los archivos de interés son las grabaciones de audio capturadas por tres micrófonos en una sala. Estos archivos contienen las señales de ruido ambiental que se utilizarán para el análisis y procesamiento.
 
+https://drive.google.com/drive/folders/1DHaIsrKwmep2bYpDj4DohjwdRHiUpmHT
 
 
 # senales1.1
