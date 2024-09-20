@@ -34,21 +34,24 @@ El código proporcionado realiza las siguientes tareas:
 
 2. **Carga de Archivos de Audio**:
     Se cargan tres archivos de audio utilizando `librosa.load`, obteniendo las señales y sus frecuencias de muestreo.
+   
 		senal_1, fs_1 = librosa.load('Sonido 1.m4a', sr=None)
 		senal_2, fs_2 = librosa.load('Sonido 2.m4a', sr=None)
 		senal_3, fs_3 = librosa.load('Sonido 3.m4a', sr=None)
 		print('Frecuencia de muestreo del audio 1:', fs_1)
 		print('Frecuencia de muestreo del audio 2:', fs_2)
+
 print('Frecuencia de muestreo del audio 3:', fs_3)
 
-3. **Creación de Vectores de Tiempo**:
+4. **Creación de Vectores de Tiempo**:
     Se crean vectores de tiempo para cada señal de audio, necesarios para graficar las señales en función del tiempo.
+
 		tiempo_audio_1 = np.linspace(0, len(senal_1) / fs_1, len(senal_1))
 		tiempo_audio_2 = np.linspace(0, len(senal_2) / fs_2, len(senal_2))
 		tiempo_audio_3 = np.linspace(0, len(senal_3) / fs_3, len(senal_3))
 
 
-4. **Configuración de Cuantificación**:
+5. **Configuración de Cuantificación**:
     Se define la resolución de cuantificación en bits y se calculan los niveles de cuantificación.
 	 Calcular SNR, Dstd y Potencia
 #### Configuración de cuantificación
